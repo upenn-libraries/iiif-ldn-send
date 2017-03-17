@@ -1,0 +1,2 @@
+config:
+  notifications_url: 'http://localhost:9292/iiif/notifications'
