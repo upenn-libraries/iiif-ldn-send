@@ -5,9 +5,10 @@ require 'json'
 require 'yaml'
 require 'i18n'
 
-
 def load_config
-  config = YAML.load_file('config.yml')
+  config_file = 'config.yml'
+  fail "Missing config file: #{config_file}" unless File.exist?(config_file)
+  config = YAML.load_file(config_file)
   @notifications_url = config['config']['notifications_url']
   @language_code = config['config']['language_code']
 end

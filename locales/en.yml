@@ -1,5 +1,6 @@
 en:
   errors:
+    config_not_found: 'Missing configuration file at %{config_file}'
     argument_missing: 'No notification specified'
     file_not_found: 'Cannot find JSON file %{json_file}'
   response:
